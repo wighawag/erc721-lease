@@ -1,24 +1,40 @@
-# Boilerplate for ethereum solidity smart contract development
+# Lease Contract
 
-## INSTALL
+The contract in this repo allow anyone to rent their NFT token. the contract act as a registry for lease.
+
+With lease, token owner retain ownership. This allow the onwer to continue trading its token, while users are able to use their token in every place that support such registry.
+The obvious use case is off-chain reading for nft display, etc...
+But this could be potentially used on-chain too for various use cases.
+
+Note that each registration is itself an NFT token representing a lease. They can itself be sub-leased.
+
+This allow the owner to
+
+- retain ownership while renting its tokens
+- give ownership for loan (for example) but lease the token to itself before hand to continue renting the token
+
+This allow users to
+
+- use token
+- sub-rent the token
+- sell renting right
+
+## requirements :
+
+### node
+
+This project requires [node.js](https://nodejs.org/) (tested on v12+)
+
+## intall dependencies :
 
 ```bash
-yarn
+yarn install
 ```
 
-## TEST
+# Development
+
+The following command will test your contracts
 
 ```bash
 yarn test
 ```
-
-## Github Setup
-
-This include codechecks setup for gas report.
-See guide here : https://github.com/cgewecke/hardhat-gas-reporter#continuous-integration
-
-The repo code is setup for it. The only thing needed is setting up codecheks account and adding the repo to codechecks so you get a secret token
-
-you ll need to set the github secret of the respective project added to codechecks.io. the secret name is: CC_SECRET (see .github/workflows/main.yml)
-
-If you do not want gas report via codecheck you can remove `codechecks.yml` and `.github` and execute : `yarn remove @codechecks/client`

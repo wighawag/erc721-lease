@@ -1,17 +1,15 @@
 {
-  "name": "template-ethereum-contracts",
+  "name": "erc721-lease",
   "version": "0.1.0",
-  "description": "Template to develop ethereum smart contracts",
-  "repository": "github:wighawag/template-ethereum-contracts",
+  "description": "Contracts to allow renting of ERC721 for use",
+  "repository": "github:wighawag/erc721-lease",
   "author": "wighawag",
   "license": "MIT",
   "keywords": [
     "ethereum",
     "smart-contracts",
-    "template",
-    "boilerplate",
-    "hardhat",
-    "solidity"
+    "erc721",
+    "renting"
   ],
   "resolutions": {
     "websocket": "1.0.32"
