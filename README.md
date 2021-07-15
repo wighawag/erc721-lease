@@ -12,12 +12,20 @@ This allow the owner to
 
 - retain ownership while renting its tokens
 - give ownership for loan (for example) but lease the token to itself before hand to continue renting the token
+- have full liberty for lease terms: this is handled through external smart contracts.
 
 This allow users to
 
 - use token
 - sub-rent the token
 - sell renting right
+
+## Potential Issues
+
+One potential issue is that unless such standard is adopted across marketplaces, marketplaces would not be able to tell potential buyer than the NFT is currently leased. It could potentially even be leased forever (the contract is fully generic, lease's terms are handled through external smart contract)
+
+But if marketplace support it, they could display the current lease and with further standard, terms like duration, etc... could be displayed.
+
 
 ## requirements :
 
